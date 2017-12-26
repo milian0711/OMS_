@@ -12,16 +12,16 @@ class Config(object):
     }
 
 class DevelopmentConfig(Config):
-    host = "``"
-    ano = "```"
+    host = ""
+    ano = ""
     website = "http://" + host
     Config.headers['Host'] = host
     Config.headers['Referer'] = website + '/sso/login?service=' + ano + '/oms/main.html'
     post_url = website + '/sso/login?service=' + ano + '/oms/main.html'
     # 验证码
     IC_url = website + '/sso/captcha.htm'
-    username = '黄利娟hztest'
-    password = '1qaz!QAZ'
+    username = ''
+    password = ''
 
     # TEST栏目下面的一条普通新闻
     newsID = 6869323
@@ -57,15 +57,16 @@ class DevelopmentConfig(Config):
     addComments_url = website + "/oms/addComment.json"
 
 class ProductConfig(Config):
-    host = "```"
+    host = ""
     website = "http://" + host
     Config.headers['Host'] = host
     Config.headers['Referer'] = website + '/sso/login?service=' + website + '/oms/main.html'
     post_url = website + '/sso/login?service=' + website + '/oms/main.html'
     # 验证码
     IC_url = website + '/sso/captcha.htm'
-    username = '```'
-    password = '```'
+    username = ''
+    password = ''
+
 
     # NEW栏目下面的一条普通新闻
     newsID = 17884373
