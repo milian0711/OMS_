@@ -12,16 +12,27 @@ class Config(object):
     }
 
 class DevelopmentConfig(Config):
-    host = "****"
+    host = "``"
+    ano = "```"
     website = "http://" + host
     Config.headers['Host'] = host
-    Config.headers['Referer'] = website + '/sso/login?service=' + website + '/oms/main.html'
-    post_url = website + '/sso/login?service=' + website + '/oms/main.html'
+    Config.headers['Referer'] = website + '/sso/login?service=' + ano + '/oms/main.html'
+    post_url = website + '/sso/login?service=' + ano + '/oms/main.html'
     # 验证码
     IC_url = website + '/sso/captcha.htm'
-    username = '***'
-    password = '***'
+    username = '黄利娟hztest'
+    password = '1qaz!QAZ'
 
+    # TEST栏目下面的一条普通新闻
+    newsID = 6869323
+    # 链接到的栏目名称：批量测试
+    nodeID = 2002662
+    # 第二项为节目推荐类型
+    param_list = [('6869323', 'True'), ('17754437', 'False'), ('185374 25', 'False'), ('185374#25', 'False'), (185374, 'False')]
+
+
+
+    ID = 6869314
     # 长短链转换
     change_url = website + '/oms/change.json'
     # 外部图片地址转换为服务器地址
@@ -36,18 +47,32 @@ class DevelopmentConfig(Config):
     addComment_url = website + "/oms/addComment.json"
     # 权重
     updateImportance_url = website + "/oms/updateImportance.json"
-
+    # 添加新闻到我的收藏夹
+    addFavoriteNews_url = website + "/oms/addFavoriteNews.json"
+    # 从我的收藏夹中取消收藏
+    cancelFavoriteNews_url = website + "/oms/cancelFavoriteNews.json"
+    # 获得随机昵称
+    getNickname_url = website + "/oms/getRandomCommentNickName.json"
+    # 后台添加评论
+    addComments_url = website + "/oms/addComment.json"
 
 class ProductConfig(Config):
-    host = "****"
+    host = "```"
     website = "http://" + host
     Config.headers['Host'] = host
     Config.headers['Referer'] = website + '/sso/login?service=' + website + '/oms/main.html'
     post_url = website + '/sso/login?service=' + website + '/oms/main.html'
     # 验证码
     IC_url = website + '/sso/captcha.htm'
-    username = '***'
-    password = '****'
+    username = '```'
+    password = '```'
+
+    # NEW栏目下面的一条普通新闻
+    newsID = 17884373
+    # 链接到的栏目名称：批量测试
+    nodeID = 2008364
+
+    param_list = [('17884373', 'True'), ('17754437', 'False'), ('185374 25', 'False'), ('185374#25', 'False'), (185374, 'False')]
 
     # 长短链转换
     change_url = website + '/oms/change.json'
@@ -63,6 +88,13 @@ class ProductConfig(Config):
     addComment_url = website + "/oms/addComment.json"
     # 权重
     updateImportance_url = website + "/oms/updateImportance.json"
+    # 添加新闻到我的收藏夹
+    addFavoriteNews_url = website + "/oms/addFavoriteNews.json"
+    # 从我的收藏夹中取消收藏
+    cancelFavoriteNews_url = website + "/oms/cancelFavoriteNews.json"
+    # 获得随机昵称
+    getNickname_url = website + "/oms/getRandomCommentNickName.json"
+    # 后台添加评论
+    addComments_url = website + "/oms/addComment.json"
 
-
-Conf = DevelopmentConfig
+Conf = ProductConfig
