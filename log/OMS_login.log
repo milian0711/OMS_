@@ -1,6 +1,0 @@
-[2017-12-26 19:20:26,170] [INFO] mylocation is http://211.140.17.93:8021/oms/main.html?ticket=ST-2065-cgGZosjWQ2aJi4IB43AK-cas
-[2017-12-26 19:20:47,236] [INFO] oms_url is http://211.140.17.93:8021/oms/main.html;jsessionid=ADDE134DDA0B1B604558014912ED20B8 
-[2017-12-26 19:21:29,405] [INFO] response is True
-[2017-12-26 19:21:29,405] [INFO] addFavoriteNews success
-[2017-12-26 19:21:50,454] [INFO] response is True
-[2017-12-26 19:21:50,454] [INFO] cancelFavoriteNews success
