@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/milian0711/OMS_.svg?branch=master)](https://travis-ci.org/milian0711/OMS_)
 # OMS
 框架初步模型
 config为配置文件信息，可一键切换到开发或生产环境
